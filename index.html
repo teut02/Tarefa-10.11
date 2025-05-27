@@ -7,72 +7,70 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <h1 class="logo">Agência Criativa Web</h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+      <h1 class="header__logo">Agência Criativa Web</h1>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a class="header__menu-link" href="#home">Início</a></li>
+          <li><a class="header__menu-link" href="#sobre">Sobre Nós</a></li>
+          <li><a class="header__menu-link" href="#servicos">Serviços</a></li>
+          <li><a class="header__menu-link" href="#depoimentos">Depoimentos</a></li>
+          <li><a class="header__menu-link" href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="home">
-    <div class="banner">
-      <h2>Bem-vindo à Agência Criativa Web</h2>
-      <p>Transformando ideias em experiências digitais incríveis!</p>
+  <section id="home" class="banner">
+    <h2 class="banner__title">Bem-vindo à Agência Criativa Web</h2>
+    <p class="banner__subtitle">Transformando ideias em experiências digitais incríveis!</p>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div class="container">
+      <h2 class="about__title">Sobre Nós</h2>
+      <p class="about__text">Somos uma agência apaixonada por design e tecnologia. Valorizamos a criatividade, inovação e o foco total no cliente.</p>
     </div>
   </section>
 
-  <section id="sobre">
+  <section id="servicos" class="section services">
     <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Somos uma agência apaixonada por design e tecnologia. Valorizamos a criatividade, inovação e o foco total no cliente.</p>
-    </div>
-  </section>
-
-  <section id="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
-      <div class="grid-servicos">
-        <div class="servico">Design Gráfico</div>
-        <div class="servico">Desenvolvimento Web</div>
-        <div class="servico">UI/UX Design</div>
-        <div class="servico">Marketing Digital</div>
+      <h2 class="services__title">Serviços</h2>
+      <div class="services__grid">
+        <div class="service-card">Design Gráfico</div>
+        <div class="service-card">Desenvolvimento Web</div>
+        <div class="service-card">UI/UX Design</div>
+        <div class="service-card">Marketing Digital</div>
       </div>
     </div>
   </section>
 
-  <section id="depoimentos">
+  <section id="depoimentos" class="section testimonials">
     <div class="container">
-      <h2>Depoimentos</h2>
-      <div class="depoimento">"Equipe sensacional! Superaram todas as nossas expectativas." - João Silva</div>
-      <div class="depoimento">"Criatividade e profissionalismo em cada detalhe." - Maria Souza</div>
-      <div class="depoimento">"Recomendo de olhos fechados. Trabalho impecável!" - Ana Lima</div>
+      <h2 class="testimonials__title">Depoimentos</h2>
+      <div class="testimonial">"Equipe sensacional! Superaram todas as nossas expectativas." - João Silva</div>
+      <div class="testimonial">"Criatividade e profissionalismo em cada detalhe." - Maria Souza</div>
+      <div class="testimonial">"Recomendo de olhos fechados. Trabalho impecável!" - Ana Lima</div>
     </div>
   </section>
 
-  <section id="contato">
+  <section id="contato" class="section contact">
     <div class="container">
-      <h2>Contato</h2>
-      <p>Endereço: Rua Criativa, 123 - Rio de Janeiro, RJ</p>
-      <p>Telefone: (21) 1234-5678</p>
-      <p>E-mail: contato@agenciacriativaweb.com</p>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+      <h2 class="contact__title">Contato</h2>
+      <p class="contact__info">Endereço: Rua Criativa, 123 - Rio de Janeiro, RJ</p>
+      <p class="contact__info">Telefone: (21) 1234-5678</p>
+      <p class="contact__info">E-mail: contato@agenciacriativaweb.com</p>
+      <form class="contact__form">
+        <input class="contact__input" type="text" placeholder="Seu nome" required>
+        <input class="contact__input" type="email" placeholder="Seu e-mail" required>
+        <textarea class="contact__textarea" placeholder="Sua mensagem" required></textarea>
+        <button class="contact__button" type="submit">Enviar</button>
       </form>
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Agência Criativa Web. Todos os direitos reservados.</p>
     </div>

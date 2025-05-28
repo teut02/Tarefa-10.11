@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: variaveis.$espacamento 0;
+  text-align: center;
+}
+
+.section {
+  padding: calc(variaveis.$espacamento * 1.25) 0;
+}

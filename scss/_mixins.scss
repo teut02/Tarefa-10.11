@@ -1,0 +1,17 @@
+@use 'variaveis';
+
+@mixin espacamento-padrao {
+  padding: variaveis.$espacamento;
+  margin-bottom: calc(variaveis.$espacamento / 2);
+}
+
+@mixin botao-basico($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: variaveis.$radius;
+  cursor: pointer;
+  transition: background 0.3s;
+}
